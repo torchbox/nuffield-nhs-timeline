@@ -1,0 +1,494 @@
+/* General styles */
+body{
+	font-size:75%;
+	font-family: arial, sans-serif;
+	color: #333;
+	position: relative;
+}
+a, a:visited,a:link{
+	color:#006073;
+	text-decoration:none;
+}
+	a:hover{
+		color:#B72731;
+	}
+
+h1{
+	font-style:italic;
+}
+
+.topbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: #fff;
+	border-bottom: 5px solid #D3CCC2;
+	z-index: 100;
+}
+
+	.topbar .strapline {
+		display: block;
+		float: left;
+		width: 114px;
+		height: 29px;
+		text-indent: -9999px;
+		background:url(images/strapline.png) 0 0 no-repeat;
+		margin: 28px 0 0 26px;
+	}
+
+	.topbar .logo {
+		display: block;
+		float: right;
+		width: 196px;
+		height: 38px;
+		text-indent: -9999px;
+		background:url(images/logo.png) 0 0 no-repeat;
+		margin: 24px 16px 0 0;
+	}
+
+.logo a{
+	width:161px;
+	height:30px;
+	display:block;
+	position:absolute;
+	left:30px;
+	top:20px;
+	z-index:10;
+	padding-top:85px;
+	background:url(images/logo.png) 0 0 no-repeat;
+}
+
+/* hover areas for auto scrolling */
+.direction{
+    position:fixed;
+    width:50px;
+    height:100%;
+	z-index:50;
+}
+	.left{left:0; top:0;}
+	.right{right:0; top:0;}
+	
+/* important timeline styles */
+.timeline{
+	overflow:hidden;
+}
+	.timeline .content{
+		height:100%;
+		min-height:100%;
+	}
+	.timeline > div{
+		float:left;
+		height:100%;
+		overflow:hidden;
+		position:relative;
+	}
+		.timeline .loading{
+			width:1180px;
+			padding-left:100px;
+			line-height:500px;
+			color:#CCC;
+			font-size:5em;
+			border-left:1px solid #CCC;
+		}
+
+/* navigation */
+.nav{
+	font-size:1.5em;
+	background:#393536;
+	padding:0;
+	margin: 0;
+	height: 55px;
+	text-align:center;
+	position: fixed;
+	top: 85px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #636362;
+	background: url(images/nav_bg.png) 0 0 repeat;
+	z-index: 100;
+}
+	.nav ul{
+		margin:0 auto;
+		width:100%;
+		overflow:hidden;
+	}
+.nav li{
+	display:inline;
+	line-height:1.1em;
+}
+	.nav .next, .nav .prev{
+		display:block;
+		position:fixed;
+		top:200px;
+		width:33px;
+		height:150px;
+	}
+		.nav .next{
+			right:0;
+			background:url(images/nav_right.png) right 0 no-repeat;
+		}
+		.nav .prev{
+			left:0;
+			background:url(images/nav_left.png) left 0 no-repeat;
+		}
+		.nav .next:hover, .nav .prev:hover{
+			cursor: pointer;
+		}
+	.nav a{
+		font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+		font-weight:normal;
+		color:white;
+		text-decoration:none;
+		line-height:1em;
+		outline:none;
+		margin: 0;
+		padding: 20px 15px 0;
+		display: inline-block;
+		height: 60px;
+	}
+		.nav li a:hover{
+			color:#B72731;
+		}
+		.nav li.selected a {
+			background: url(images/nav_current.png) center 10px no-repeat;
+			color: #fff;
+		}
+
+ .periodimage{
+	position:absolute;
+	z-index:1;
+	bottom:63px;
+	width:100%;
+}
+	.periodimage img{
+		width:100%;
+		height:321px;
+	}
+/* year item layout and content*/
+.years{
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+	padding: 0;
+	height: 100%;
+	background: url(images/backgrounds/scale.png) 0 100% no-repeat;
+}
+	.years li.year{
+		height: 100%;
+		width:220px;
+		position: relative;
+		float:left;
+		border:1px solid transparent; /* necessary due to IE9 absolute position bug*/
+		display:block;
+		margin:0 25px;
+		line-height:1em;
+		list-style: none;
+	}
+		.years .block {
+			padding: 10px 10px 0;
+			margin-bottom:80px;
+			width:200px;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			background:white;
+			border:1px solid #E8E8E8;
+			background:rgba(255,255,255,0.7);
+			-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+			box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+			border-radius: 2px 2px 2px 2px;
+		}
+		
+		.years h2, .overlay h2{
+			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+			font-weight:normal;
+			font-size:1.75em;
+			line-height:1.5;
+			text-indent: 10px;
+			padding: 0;
+			margin-bottom:5px;
+			color: #fff;
+			background: url(images/year_normal.png) 0 0 no-repeat;
+			/* width: 70px; */
+			height: 39px;
+			position: relative;
+			left: -18px;
+			clear: both;
+		}
+		.years h2 .yyyy, 
+		.overlay h2 .yyyy, 
+		.years h2 .mmmm, 
+		.overlay h2 .mmmm{
+			font-weight:normal;
+			background-color: #B32630;
+			height: 32px;
+			display: block;
+			float: left;
+		}
+		.years h2 .yyyy, 
+		.overlay h2 .yyyy{
+			padding: 0 10px 0 0;
+		}
+		.years h2 .mmmm, 
+		.overlay h2 .mmmm{
+			font-family: Arial,sans-serif;
+			font-size: 80%;
+			padding: 0 10px 0 0;
+			line-height: 2.1;
+			text-indent: -5px;
+		}
+		.years .future h2,
+		.overlay.future h2 {
+			background-image: url(images/year_future.png);
+			height: 60px;
+		}
+		.years .future h2 .yyyy, 
+		.overlay.future h2 .yyyy, 
+		.years .future h2 .mmmm, 
+		.overlay.future h2 .mmmm{
+			height: 53px;
+		}
+		.years .future h2 .yyyy, 
+		.overlay.future h2 .yyyy{
+			background-color: transparent;
+		}
+		.years .future h2 .mmmm, 
+		.overlay.future h2 .mmmm{
+			background-color: #006073;
+		}
+		.years .future h2:after, 
+		.overlay.future h2:after{
+			content:'>\0000a0';
+			background: url(images/year_fd.png) 0 0 no-repeat;
+			position: absolute;
+			display: block;
+			text-indent: -9999px;
+			width: 96px;
+			height: 20px;
+			bottom: 12px;
+			left: 8px;
+			text-transform: uppercase;
+		}
+		
+		.years img, .overlay img{
+			border:1px solid #D2D2D2;
+			background:#F7F7F7;
+			padding:2px;
+			margin-bottom:10px;
+		}
+			.overlay img.left{
+				float:left;
+				margin-right:20px;
+			}
+		.years p, .overlay p{
+			padding:0 0 10px 0;
+			line-height: 1.3em;
+			font-size: 105%;
+		}
+		.years .biglink{
+			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+			font-size: 1.5em;
+			line-height: 1.15;
+		}
+		.years blockquote {
+			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+			font-weight:normal;
+		    font-size: 1.9em;
+		    line-height: 1.15;
+		    padding: 0 0 10px;
+		}
+		.years blockquote:before {
+			content: '\201C';
+		}
+		.years blockquote:after {
+			content: '\201D';
+		}
+		.years cite {
+			font-size: 1em;
+			font-style: normal;
+			padding:0 0 10px 0;
+			line-height: 1.4em;
+			display: block;
+		}
+		.years p em{
+			display:block;
+			padding-bottom:10px;
+			font-size:1.6em;
+			line-height:1.1em;
+			font-weight:bold;
+		}
+		.years .magnify, .years .video{
+			position:relative;
+			display:inline-block;
+		}
+			.years .magnify span, .years .video span{
+				position:absolute;
+				width:27px;
+				height:26px;
+				z-index:2;
+				right:10px;
+				top:10px;
+			}
+			.years .magnify span{
+				background: url(images/icon_magnify.png) 0px -26px no-repeat;
+			}
+			.years .video span{
+				background: url(images/icon_play.png) 0px -26px no-repeat;
+			}
+			.years a:hover span{
+				background-position:0 0px;
+			}
+	.years li.intro{
+		position: relative;
+		float:left;
+		overflow: hidden;
+		width:392px;
+		margin-left:0;
+		margin-right:20px;
+		width: 310px;
+		text-indent: -9999px;
+	}
+		li.intro h1{
+			color:white;
+			font-size: 6.667em;
+			line-height:1;
+			margin-bottom: 10px;
+			color: #202020;
+			letter-spacing: -5px;
+		}
+		li.intro p.intro{
+			font-size:2.25em;
+			color: #202020;
+			letter-spacing: -1px;
+		}
+
+/* images for use in each year */
+.period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed; background-size: cover; }
+.period1950{ background: url(images/backgrounds/1950s.jpg) 0 140px fixed; background-size: cover; }
+.period1960{ background: url(images/backgrounds/1960s.jpg) 0 140px fixed; background-size: cover; }
+.period1970{ background: url(images/backgrounds/1970s.jpg) 0 140px fixed; background-size: cover; }
+.period1980{ background: url(images/backgrounds/1980s.jpg) 0 140px fixed; background-size: cover; }
+.period1990{ background: url(images/backgrounds/1990s.jpg) 0 140px fixed; background-size: cover; }
+.period2000{ background: url(images/backgrounds/2000s.jpg) 0 140px fixed; background-size: cover; }
+.period2010{ background: url(images/backgrounds/2010s.jpg) 0 140px fixed; background-size: cover; }
+
+/* intro image for first page */
+.timeline .introimage {
+	background: url(images/intro.png) 0 0 no-repeat;
+	width: 648px;
+	height: 234px;
+	display: block;
+	left: 90px;
+	top: 200px;
+	position: absolute;
+}
+
+/* media queries, target special screen size */
+.timeline .introimagealt { background-image: url(images/intro2.png); top: 175px; }
+
+/* overlay lightbox*/
+#exposeMask{
+	z-index:9000 !important;
+	position:fixed !important; /* vital for IE */
+}
+.overlay {
+	margin-top:-30px;
+	z-index:10000;
+	display:none;
+	background-color:white;
+	padding:11px;
+	max-width: 630px;
+}
+	.overlay .close{
+		width:30px;
+		height:30px;
+		display:block;
+		right:-17px;
+		top:-14px;
+		position:absolute;
+		z-index:10000;
+		cursor:pointer;
+		background:url(images/icon_close.png) 0 0 no-repeat;
+	}
+
+
+/* footer */
+footer {
+	font-family: arial,sans-serif;
+	position:fixed;
+	z-index:100;
+	bottom:0;
+	width:100%;
+	height: 63px;
+	border-top: 3px solid #4E5151;
+	background-color: #2E3437;
+}
+/* Footer footer */
+.footer-footer {
+	font-family: arial, sans-serif;
+	font-style: normal;
+	color: #ccc;
+}
+	.footer-footer ul {
+		float: right;
+	}
+		.footer-footer li {
+			list-style-type:none;
+			float: left;
+			margin: 0;
+			padding: 10px 20px 0 0;
+		}
+			
+			.footer-footer li a {
+				color: #fff;
+				font-weight: bold;
+			}
+
+			.footer-footer .footer-logo {
+				float: left;
+			}
+
+			.footer-footer .footer-logo .logo {
+				display: block;
+				float: left;
+				width: 139px;
+				height: 27px;
+				text-indent: -9999px;
+				background:url(images/logo2.png) 0 0 no-repeat;
+				margin: 12px 0 0 26px;
+			}
+			
+			.footer-footer .sitebytbx{
+				border:0;
+				margin: -2px 0 0;
+			}
+				.footer-footer .sitebytbx a {
+					display: block;
+					width: 100px;
+					height: 15px;
+					background: url(images/sitebytbx.png) no-repeat top left;
+					text-indent: -9999px;
+				}
+					.footer-footer .sitebytbx a:hover {
+						background-position: bottom left;
+					}
+			
+			.footer-footer .social {
+				border: none;
+				padding: 0;
+				margin: 0;
+			}
+				.footer-footer .social{
+					position:fixed;
+					top:150px;
+					right: 152px;
+					margin-left:20px;
+				}
+			
+	.footer-footer .footer-links {
+		margin: 12px 0 0;
+	}
+	
