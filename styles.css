@@ -172,10 +172,13 @@ h1{
 	position:relative;
 	z-index:2;
 	overflow:hidden;
-	padding: 0;
+	padding: 0 25px;
 	height: 100%;
 	background: url(images/backgrounds/scale.png) 0 100% no-repeat;
 }
+	.first .years{
+		background: url(images/backgrounds/scale_first.png) 0 100% no-repeat;
+	}
 	.years li.year{
 		height: 100%;
 		width:220px;
@@ -345,25 +348,11 @@ h1{
 		position: relative;
 		float:left;
 		overflow: hidden;
-		width:392px;
 		margin-left:0;
 		margin-right:20px;
-		width: 310px;
+		width: 250px;
 		text-indent: -9999px;
 	}
-		li.intro h1{
-			color:white;
-			font-size: 6.667em;
-			line-height:1;
-			margin-bottom: 10px;
-			color: #202020;
-			letter-spacing: -5px;
-		}
-		li.intro p.intro{
-			font-size:2.25em;
-			color: #202020;
-			letter-spacing: -1px;
-		}
 
 /* images for use in each year */
 .period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed; background-size: cover; }
