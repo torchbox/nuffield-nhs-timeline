@@ -13,9 +13,9 @@ a, a:visited,a:link{
 		color:#B72731;
 	}
 
-h1{
+/*h1{
 	font-style:italic;
-}
+}*/
 
 .topbar {
 	position: fixed;
@@ -192,9 +192,9 @@ h1{
 	}
 
 		.years li.first-item {
-			padding-left: 300px;
+			padding-left: 30px;
 		}
-		
+
 		.years .block {
 			padding: 10px 10px 0;
 			margin-bottom:80px;
@@ -355,9 +355,22 @@ h1{
 		overflow: hidden;
 		margin-left:0;
 		margin-right:20px;
-		width: 250px;
-		text-indent: -9999px;
+		width: 700px;
+		/*text-indent: -9999px;*/
+		top: 200px;
+		left: 50px;
+		list-style-type: none;
 	}
+
+		.years li.intro h1 {
+			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+			font-size: 6em;
+		}
+
+		.years li.intro p {
+			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+			font-size: 2em;
+		}
 
 /* images for use in each year */
 .period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed; background-size: cover; }
@@ -370,7 +383,7 @@ h1{
 .period2010{ background: url(images/backgrounds/2010s.jpg) 0 140px fixed; background-size: cover; }
 
 /* intro image for first page */
-.timeline .introimage {
+/*.timeline .introimage {
 	background: url(images/intro.png) 0 0 no-repeat;
 	width: 648px;
 	height: 234px;
@@ -378,7 +391,7 @@ h1{
 	left: 90px;
 	top: 200px;
 	position: absolute;
-}
+}*/
 
 /* media queries, target special screen size */
 .timeline .introimagealt { background-image: url(images/intro2.png); top: 175px; }
