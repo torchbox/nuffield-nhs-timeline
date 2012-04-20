@@ -483,17 +483,26 @@ footer {
 						background-position: bottom left;
 					}
 			
-			.footer-footer .social {
+			.footer-footer .footer-social {
 				border: none;
 				padding: 0;
 				margin: 0;
 			}
-				.footer-footer .social{
+				.footer-footer .footer-social{
 					position:fixed;
 					top:150px;
 					right: 152px;
 					margin-left:20px;
 				}
+
+				.footer-footer .footer-social li{
+					padding-right: 0;
+				}
+
+				.footer-footer .footer-social li#gplus{
+					margin-left: -10px;
+				}
+
 			
 	.footer-footer .footer-links {
 		margin: 12px 0 0;
