@@ -2,6 +2,7 @@ var bgspeed = -0.5;
 var overlaycounter = 0;
 var rate = 1;
 var scroller;
+var minimumHeight = 600;
 
 $(function(){
 	$('body').addClass("hasjs");
@@ -70,7 +71,15 @@ $(function(){
 
 function resizeWindow(){
 	var browserinnerheight = $(window).height();	
-	$('.timeline').height(browserinnerheight);
+	// if the window is less than 500px tall, hide the footer
+	if (browserinnerheight < minimumHeight){
+		$('body').addClass('small-screen');
+		$('.timeline').height(minimumHeight);
+	}
+	else{
+		$('body').removeClass('small-screen');
+		$('.timeline').height(browserinnerheight);
+	}
 }
 
 function scrollTimeline(){

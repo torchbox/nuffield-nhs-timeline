@@ -167,17 +167,21 @@ a, a:visited,a:link{
 		width:100%;
 		height:321px;
 	}
+
+.small-screen .periodimage{
+	bottom: 0px;
+}
 /* year item layout and content*/
 .years{
 	position:relative;
 	z-index:2;
 	overflow:hidden;
-	padding: 0 25px;
+	padding: 0 25px 0 300px;
 	height: 100%;
-	background: url(images/backgrounds/scale.png) 0 100% no-repeat;
+	background: url(images/backgrounds/scale_first.png) 0 100% no-repeat;
 }
 	.first .years{
-		background: url(images/backgrounds/scale_first.png) 0 100% no-repeat;
+		padding: 0 25px;
 	}
 	.years li.year{
 		height: 100%;
@@ -208,6 +212,10 @@ a, a:visited,a:link{
 			-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 			box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 			border-radius: 2px 2px 2px 2px;
+		}
+
+		.small-screen .years .block{
+			margin-bottom: 10px;
 		}
 		
 		.years h2, .overlay h2{
@@ -433,6 +441,11 @@ footer {
 	border-top: 3px solid #4E5151;
 	background-color: #2E3437;
 }
+
+.small-screen footer{
+	display: none;
+}
+
 /* Footer footer */
 .footer-footer {
 	font-family: arial, sans-serif;
