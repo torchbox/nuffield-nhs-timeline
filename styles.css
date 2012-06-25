@@ -180,9 +180,18 @@ a, a:visited,a:link{
 	height: 100%;
 	background: url(images/backgrounds/scale_later.png) 0 100% no-repeat;
 }
+
+.small-screen .years{
+	background: url(images/backgrounds/small_scale_later.png) 0 100% no-repeat;
+}
+
 	.first .years{
 		padding: 0 25px;
 		background: url(images/backgrounds/scale_first.png) 0 100% no-repeat;
+	}
+
+	.small-screen .first .years{
+		background: url(images/backgrounds/small_scale_first.png) 0 100% no-repeat;
 	}
 	.years li.year{
 		height: 100%;
@@ -443,6 +452,7 @@ footer {
 	background-color: #2E3437;
 }
 
+/* hide the footer on small screens to avoid content clashing*/
 .small-screen footer{
 	display: none;
 }
