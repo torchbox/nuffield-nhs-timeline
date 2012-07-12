@@ -314,6 +314,11 @@ a, a:visited,a:link{
 			line-height: 1.3em;
 			font-size: 105%;
 		}
+
+		.overlay p a {
+			border-bottom: 1px dotted;
+		}
+
 		.years .biglink{
 			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
 			font-size: 1.5em;
