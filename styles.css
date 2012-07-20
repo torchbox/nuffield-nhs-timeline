@@ -13,6 +13,20 @@ a, a:visited,a:link{
 		color:#B72731;
 	}
 
+blockquote {
+	font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
+	font-weight:normal;
+    font-size: 1.9em;
+    line-height: 1.15;
+    padding: 0 0 10px;
+}
+blockquote:before {
+	content: '\201C';
+}
+blockquote:after {
+	content: '\201D';
+}
+
 /*h1{
 	font-style:italic;
 }*/
@@ -324,19 +338,7 @@ a, a:visited,a:link{
 			font-size: 1.5em;
 			line-height: 1.15;
 		}
-		.years blockquote {
-			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
-			font-weight:normal;
-		    font-size: 1.9em;
-		    line-height: 1.15;
-		    padding: 0 0 10px;
-		}
-		.years blockquote:before {
-			content: '\201C';
-		}
-		.years blockquote:after {
-			content: '\201D';
-		}
+
 		.years cite {
 			font-size: 1em;
 			font-style: normal;
