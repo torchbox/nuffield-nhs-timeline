@@ -387,14 +387,21 @@ blockquote:after {
 		list-style-type: none;
 	}
 
-		.years li.intro h1 {
+		.years .intro {
 			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
-			font-size: 6em;
 		}
 
-		.years li.intro p {
-			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
-			font-size: 2em;
+		.years .intro h1 {
+			font-size: 5em;
+		}
+
+		.years .intro p {
+			font-size: 1.5em;
+		}
+
+		.years .intro cite {
+			font-size: 1em;
+			font-style: italic;
 		}
 
 /* images for use in each year */
