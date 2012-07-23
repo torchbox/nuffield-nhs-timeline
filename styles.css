@@ -98,6 +98,7 @@ blockquote:after {
 		height:100%;
 		overflow:hidden;
 		position:relative;
+		background: rgb(216, 211, 205);
 	}
 		.timeline .loading{
 			width:1180px;
@@ -423,14 +424,14 @@ blockquote:after {
 		}
 
 /* images for use in each year */
-.period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed; background-size: cover; }
-.period1950{ background: url(images/backgrounds/1950s.jpg) 0 140px fixed; background-size: cover; }
-.period1960{ background: url(images/backgrounds/1960s.jpg) 0 140px fixed; background-size: cover; }
-.period1970{ background: url(images/backgrounds/1970s.jpg) 0 140px fixed; background-size: cover; }
-.period1980{ background: url(images/backgrounds/1980s.jpg) 0 140px fixed; background-size: cover; }
-.period1990{ background: url(images/backgrounds/1990s.jpg) 0 140px fixed; background-size: cover; }
-.period2000{ background: url(images/backgrounds/2000s.jpg) 0 140px fixed; background-size: cover; }
-.period2010{ background: url(images/backgrounds/2010s.jpg) 0 140px fixed; background-size: cover; }
+.period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period1950{ background: url(images/backgrounds/1950s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period1960{ background: url(images/backgrounds/1960s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period1970{ background: url(images/backgrounds/1970s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period1980{ background: url(images/backgrounds/1980s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period1990{ background: url(images/backgrounds/1990s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period2000{ background: url(images/backgrounds/2000s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
+.period2010{ background: url(images/backgrounds/2010s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
 
 /* intro image for first page */
 /*.timeline .introimage {
