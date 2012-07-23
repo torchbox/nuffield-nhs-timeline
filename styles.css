@@ -219,6 +219,10 @@ blockquote:after {
 		list-style: none;
 	}
 
+	.years li.wide{
+		width:350px;
+	}
+
 		.years li.first-item {
 			padding-left: 30px;
 		}
@@ -236,6 +240,20 @@ blockquote:after {
 			-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 			box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 			border-radius: 2px 2px 2px 2px;
+		}
+
+		.years .wide .block {
+			width: 330px;
+		}
+
+		.years .wide p {
+			float: right;
+			width: 150px;
+		}
+
+		.years .wide img {
+			float: left;
+			display: block;
 		}
 
 		.small-screen .years .block{
