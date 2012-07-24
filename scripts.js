@@ -98,6 +98,8 @@ function scrollToPeriod(index){
 		onAfter: function(){
 			$('.nav li').removeClass("selected");
 			$('.nav li:eq('+index+')').addClass("selected");
+			// track in google analytics
+			_gaq.push(['_trackEvent', 'ScrollLink', index]);
 		}
 	});
 	return false;
@@ -163,6 +165,11 @@ function configPeriod(element){
 					this.getOverlay().appendTo('body');
 				}
 			}).append('<span></span>');
+
+			// track clicks on overlay links in google analytics
+			$this.click(function(){
+				_gaq.push(['_trackPageview', '/overlay/' + $this.attr('rel')]);
+			});
 			
 			overlaycounter++;
 		}
