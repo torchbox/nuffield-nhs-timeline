@@ -410,18 +410,23 @@ blockquote:after {
 			font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
 		}
 
-		.years .intro h1 {
-			font-size: 5em;
-		}
+			.years .intro h1 {
+				font-size: 5em;
+			}
 
-		.years .intro p {
-			font-size: 1.5em;
-		}
+			.years .intro p {
+				font-size: 1.5em;
+			}
 
-		.years .intro cite {
-			font-size: 1em;
-			font-style: italic;
-		}
+				.years .intro p.instructions {
+					font-size: 1.2em;
+				}
+
+				.years .intro p.credit {
+					font-family: arial,sans-serif;
+					font-size: 0.8em;
+					font-style: italic;
+				}
 
 /* images for use in each year */
 .period1940{ background: url(images/backgrounds/1940s.jpg) 0 140px fixed repeat-x; background-size: 2000px; }
