@@ -28,8 +28,6 @@ $(function(){
 			return scrollToPeriod(index);
 		});
 		
-		resizeWindow();
-		
 	});
 	
 	//set height of timeline to full browser height
@@ -190,6 +188,9 @@ function configPeriod(element){
 	$(element).find('.content').scrollParallax({
 		'speed':bgspeed
 	});
+
+	// do resize window to get appropriate bottom value
+	resizeWindow();
 	
 	return false;
 }
