@@ -2,7 +2,7 @@ var bgspeed = -0.5;
 var overlaycounter = 0;
 var rate = 1;
 var scroller;
-var minimumHeight = 600;
+var minimumHeight = 650;
 
 $(function(){
 	$('body').addClass("hasjs");
@@ -70,15 +70,19 @@ $(function(){
 });
 
 function resizeWindow(){
-	var browserinnerheight = $(window).height();	
+	var browserInnerHeight = $(window).height();	
 	// if the window is less than 500px tall, hide the footer
-	if (browserinnerheight < minimumHeight){
+	if (browserInnerHeight < minimumHeight){
 		$('body').addClass('small-screen');
 		$('.timeline').height(minimumHeight);
 	}
 	else{
 		$('body').removeClass('small-screen');
-		$('.timeline').height(browserinnerheight);
+		$('.timeline').height(browserInnerHeight);
+		// set the 'bottom' value on each year to be half of the difference
+		// between the minimum height and the actual height.
+		// this means they don't all sit awkwardly at the bottom of the screen
+		$('.year div.block').css('bottom', ((browserInnerHeight - minimumHeight) / 2));
 	}
 }
 
