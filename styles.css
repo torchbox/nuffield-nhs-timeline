@@ -16,7 +16,7 @@ a, a:visited,a:link{
 blockquote {
 	font-family: FuturaPTDemi-Reg,helvetica,arial,sans-serif;
 	font-weight:normal;
-    font-size: 1.9em;
+    font-size: 1.5em;
     line-height: 1.15;
     padding: 0 0 10px;
 }
@@ -331,7 +331,10 @@ blockquote:after {
 			left: 8px;
 			text-transform: uppercase;
 		}
-		
+		.overlay blockquote {
+			font-size: 1.9em;
+		}
+
 		.years img, .overlay img{
 			border:1px solid #D2D2D2;
 			background:#F7F7F7;
