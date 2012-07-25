@@ -366,7 +366,7 @@ blockquote:after {
 			line-height: 1.15;
 		}
 
-		.years cite {
+		.years cite, .years p.credit {
 			font-size: 1em;
 			font-style: normal;
 			font-weight: bold;
