@@ -197,8 +197,16 @@ function configPeriod(element){
 
 function recalcWidth(){
 	var totalWidth = 0;
-	$('.timeline > div').each(function(){
-		totalWidth += $(this).width();
-	});
+	if ($('html').hasClass('ie7')){
+		$('.timeline > div').each(function(){
+			totalWidth += $(this).width();
+			totalWidth += 375;
+		});
+	}
+	else {
+		$('.timeline > div').each(function(){
+			totalWidth += $(this).width();
+		});
+	}
 	$('.timeline').width(totalWidth);
 }
