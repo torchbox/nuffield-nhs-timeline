@@ -305,6 +305,7 @@ blockquote:after {
 		.overlay.future h2 {
 			background-image: url(images/year_future.png);
 			height: 60px;
+			display: inline-block;
 		}
 		.years .future h2 .yyyy, 
 		.overlay.future h2 .yyyy, 
@@ -318,20 +319,21 @@ blockquote:after {
 		}
 		.years .future h2 .mmmm, 
 		.overlay.future h2 .mmmm{
-			background-color: #006073;
+			background-color: transparent;
+			height: 28px;
 		}
 		.years .future h2:after, 
 		.overlay.future h2:after{
 			content:'>\0000a0';
 			background: url(images/year_fd.png) 0 0 no-repeat;
-			position: absolute;
+			position: relative;
 			display: block;
 			text-indent: -9999px;
 			width: 96px;
 			height: 20px;
-			bottom: 12px;
+			top: 28px;
 			left: 8px;
-			text-transform: uppercase;
+			z-index: 10;
 		}
 		.overlay blockquote {
 			font-size: 1.9em;
